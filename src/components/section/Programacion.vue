@@ -29,7 +29,7 @@
 
 
         <div class="courses-column">
-          <ul style="list-style-type: none">
+          <ul class="courses-ul">
             <li v-for="course in courses" :key="course.id" :class="{
               'highlighted-course': isSelectedCourse(course),
               course: true,

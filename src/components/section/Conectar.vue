@@ -27,7 +27,7 @@ export default {
   </script> -->
 
 <template>
-  <div style="display: grid; grid-template-columns: repeat(2, 1fr)">
+  <div class="conectar">
     <div>
       <span class="conectar__span">
         <h1 class="conectar__h1">conectá <br/> con nosotros.</h1>

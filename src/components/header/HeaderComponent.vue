@@ -5,15 +5,9 @@
                 <div class="header__a">
                     <router-link class="header__a1" to="/home">kickback</router-link>
                 </div>
-                <!-- style="transform: translateX(140px);" -->
-                
+
                 <div class="header__right">
-
-                    <!-- <input type="checkbox" name="check" id="check">
-                    <i class="ri-menu-line hambuerguesa"></i>
-                    <i class="ri-close-line close"></i> -->
-
-                    <nav >
+                    <nav>
                         <router-link to="/acerca-de" class="enlace-con-linea">acerca de</router-link>
                         <router-link to="/asociaciones" class="enlace-con-linea">asociaciones</router-link>
                         <router-link to="/impacto" class="enlace-con-linea">nuestro impacto</router-link>
@@ -23,6 +17,21 @@
                         <router-link to="/conectar" class="enlace-con-linea">conectar</router-link>
                     </nav>
                 </div>
+
+                <div class="button-container">
+                    <button @click="toggleLinks" id="toggleButton"><i style="font-size: 22px;" class="ri-menu-line"></i></button>
+                    <div class="items-container" v-show="showLinks" id="itemsContainer">
+                        <div style="color: black;" class="item">Menú</div>
+                        <router-link to="/acerca-de" class="enlace-con-linea">acerca de</router-link>
+                        <router-link to="/asociaciones" class="enlace-con-linea">asociaciones</router-link>
+                        <router-link to="/impacto" class="enlace-con-linea">nuestro impacto</router-link>
+                        <router-link to="/donar" class="enlace-con-linea">donar</router-link>
+                        <router-link to="/programacion" class="enlace-con-linea">programación</router-link>
+                        <router-link to="/eventos" class="enlace-con-linea">eventos</router-link>
+                        <router-link to="/conectar" class="enlace-con-linea">conectar</router-link>
+                    </div>
+                </div>
+
             </div>
 
             <div class="header__p">
@@ -50,9 +59,14 @@ export default {
     data() {
         return {
             imageSrc: miImagen,
-           
+            showLinks: false
         };
     },
+    methods: {
+    toggleLinks() {
+      this.showLinks = !this.showLinks;
+    }
+  }
 };
 </script>
 

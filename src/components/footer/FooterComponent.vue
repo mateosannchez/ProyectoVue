@@ -12,7 +12,7 @@
 
             <div class="footer__nav">
                     <nav class="">
-                        <a href="#" class="enlace-con-linea">acerca de</a>
+                        <a href="#" class="footer-con-linea">acerca de</a>
                         <a href="#productos" class="footer-con-linea">nuestro impacto</a>
                         <a href="#compañia" class="footer-con-linea">asociaciones</a>
                         <a href="#socios" class="footer-con-linea">donar</a>

@@ -43,6 +43,23 @@
   </div>
 </template> -->
 
+<!-- <template>
+
+  <div class="button-container">
+    <button id="toggleButton"><i style="font-size: 22px;" class="ri-menu-line"></i></button>
+    <div class="items-container" id="itemsContainer">
+      <div style="color: black;" class="item">Menú</div>
+      <router-link to="/acerca-de" class="enlace-con-linea">acerca de</router-link>
+      <router-link to="/asociaciones" class="enlace-con-linea">asociaciones</router-link>
+      <router-link to="/impacto" class="enlace-con-linea">nuestro impacto</router-link>
+      <router-link to="/donar" class="enlace-con-linea">donar</router-link>
+      <router-link to="/programacion" class="enlace-con-linea">programación</router-link>
+      <router-link to="/eventos" class="enlace-con-linea">eventos</router-link>
+      <router-link to="/conectar" class="enlace-con-linea">conectar</router-link>
+    </div>
+  </div>
+</template> -->
+
 <script>
 export default {
 
@@ -60,16 +77,19 @@ export default {
     };
   },
   methods: {
-  guardarDatos() {
-    // Lógica para guardar los datos ingresados por el usuario
-    if (this.inputValue.trim() !== '') {
-      console.log('Valor ingresado:', this.inputValue);
-      // Aquí puedes realizar una llamada a una API para guardar los datos en el servidor
-      // O actualizar el estado de la aplicación, etc.
-    } else {
-      console.log('No se ingresó ningún valor.');
-    }
+    guardarDatos() {
+      // Lógica para guardar los datos ingresados por el usuario
+      if (this.inputValue.trim() !== '') {
+        console.log('Valor ingresado:', this.inputValue);
+        // Aquí puedes realizar una llamada a una API para guardar los datos en el servidor
+        // O actualizar el estado de la aplicación, etc.
+      } else {
+        console.log('No se ingresó ningún valor.');
+      }
+    },
   },
-},
+
 };
+
+
 </script>

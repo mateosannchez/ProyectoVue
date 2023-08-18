@@ -12,17 +12,7 @@
 
     <div style="background-color: black; transform: translateY(-10rem);">
       <div style="display: flex; justify-content: center">
-        <p
-          style="
-            color: white;
-            
-            width: 63%;
-            text-align: justify;
-            font-size: 21px;
-            margin: 10px;
-            padding: 9rem;
-          "
-        >
+        <p class="impacto__p">
           Un nuevo par de zapatos tiene el poder de iniciar conversaciones que
           de otro modo nunca sucederían. Regalar el par adecuado a la persona
           adecuada en el momento adecuado de sus vidas puede ayudar a romper el
@@ -41,17 +31,7 @@
 
     <div style="background-color: white;  transform: translateY(-7rem);">
       <div style="display: flex; justify-content: center">
-        <p
-          style="
-            color: black;
-            
-            width: 63%;
-            text-align: justify;
-            font-size: 21px;
-            margin: 10px;
-            padding: 9rem;
-          "
-        >
+        <p class="impacto__p1">
           Una talla de zapato más grande a menudo coincide con salir más tarde,
           encontrar su independencia y, a veces, encontrar problemas. Sin
           excepción, todos los niños desfavorecidos tienen que tomar una
